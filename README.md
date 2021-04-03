@@ -3,6 +3,6 @@
 - Tambien aprenderás que hace el método *.map* nativo de Javascript
 
 ### Velo en vivo aquí
-https://santiagoarangog.github.io/Rick-Morthy-API/
+https://champion19.github.io/rick-and-morty/
 
 Buena suerte y buen tipeo
