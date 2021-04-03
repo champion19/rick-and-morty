@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/theme.min.css">
+        <link rel="stylesheet" href="assets/css/loader.min.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <title>Ejecicio Rick & Morthy API</title>
+        <script src="assets/js/loader.min.js"></script>
+        <script src="assets/js/location.js"></script>
+
+    </head>
+</head>
+
+<body>
+    <header class="header">
+        <div class="topbar topbar-dark bg-dark">
+            <div class="container d-md-flex align-items-center px-0 px-xl-3">
+                <div class="d-none d-md-block text-nowrap me-3">
+                    <a class="topbar-link me-1" href="https://web.whatsapp.com/send?phone=573113111538&amp;text=Hola Santiago necesito ayuda en una página" target="_blank"><i class="fab fa-whatsapp fs-base text-success me-1 align-middle"></i> (+57) 3135497851</a>
+                </div>
+                <div class="d-flex text-md-end ms-md-auto">
+                    <div class="ms-auto ms-md-0 me-3">
+                        <img class="me-2" src="assets/images/flag.png" alt="Español" width="20">Colombia
+                        <a class="topbar-link" href="https://github.com/santiagoarangog/Rick-Morty-API" target="_blank"><i class="fab fa-github text-muted fs-base me-1 align-middle"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar navbar-expand-lg navbar-light bg-light navbar-shadow navbar-sticky" data-scroll-header="" data-fixed-element="">
+            <div class="container px-0 px-xl-3">
+                <button class="navbar-toggler ms-n2 me-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#primaryMenu"><span class="navbar-toggler-icon"></span></button>
+                <a class="navbar-brand flex-shrink-0 order-lg-1 mx-auto ms-lg-0 pe-lg-2 me-lg-4" href=""><img class="d-none d-lg-block" src="assets/images/rick-and-morty.png" alt="Rick & Morty API" width="65"><img class="d-lg-none" src="assets/images/rick-and-morty.png" alt="Rick & Morty API" width="58"></a>
+                <div class="d-flex align-items-center order-lg-3 ms-lg-auto">
+                </div>
+                <div class="offcanvas offcanvas-collapse order-lg-2" id="primaryMenu">
+                    <div class="offcanvas-cap navbar-shadow">
+                        <h5 class="mt-1 mb-0">Menu</h5>
+                        <button class="btn-close lead" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <!-- Menu-->
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Personajes</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="episodes.html">Episodios</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="location.html">Ubicaciones</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">Documentación</a>
+                            </li>
+                        </ul>
+                    </div>
+    </header>
+    <main class="page-wrapper">
+        <!-- Page loading spinner-->
+        <div class="page-loading active">
+            <div class="page-loading-inner">
+                <div class="page-spinner"></div><span>Bienvenido a <br><strong>Rick & Morthy API</strong>...</span>
+            </div>
+        </div>
+
+        <section class="position-relative pt-7 pb-5 pb-md-7 bg-size-cover bg-faded-dark bg-attachment-fixed" style="background-image: url(assets/images/imagen8.jpg);">
+            <div class="shape shape-bottom shape-curve bg-body">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 185.4">
+            <path fill="currentColor" d="M3000,0v185.4H0V0c496.4,115.6,996.4,173.4,1500,173.4S2503.6,115.6,3000,0z"></path>
+          </svg>
+            </div>
+            <div class="container position-relative zindex-5 text-center pt-md-6 pt-lg-7 py-5 my-lg-3 pt-6">
+                <h1 class="text-light mb-0"> <span class="h2 d-inline-block bg-primary text-default px-3 py-2 rounded-3 ms-3">Ubicaciones</span></h1>
+            </div>
+        </section>
+
+        <br>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 row-col-xs-2 g-4" id="listLocation">
+            </div>
+        </div>
+        <!-- Back to top button-->
+        <a class="btn-scroll-top" href="#top" data-scroll data-fixed-element>
+            <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span><i class="btn-scroll-top-icon fas fa-arrow-up">   </i>
+        </a>
+
+        <footer class="m-20 text-light p-5 bg-dark tex-light">
+            <!--container padre--->
+            <div class="row">
+                <div class="widget widget-light col-md-5">
+                    <h4 class="widget-title">Otros personajes</h4>
+                    <ul>
+                        <li>character</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="widget widget-light">
+                        <h4 class="widget-title">Soporte</h4>
+                        <ul>
+                            <li>character</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="widget widget-light">
+                        <h4 class="widget-title">Documentacion</h4>
+                        <ul>
+                            <li>Docs</li>
+                            <li>#fans</li>
+                            <li>criticas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
